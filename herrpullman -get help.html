@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>herrpullman | Back on your feet after being herpullmanned</title>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;800&family=Source+Serif+4:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#e9eeea;--ink:#14201c;--green:#1f3b33;--brass:#a67a2c;--red:#b83a28;--card:#f6f8f6;--line:#b9c4be;--on-green:#e9eeea;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#101a17;--ink:#e4ebe7;--green:#0a120f;--brass:#d2a550;--red:#e0705e;--card:#17251f;--line:#2f433b;--on-green:#e4ebe7}}
+:root[data-theme="dark"]{--bg:#101a17;--ink:#e4ebe7;--green:#0a120f;--brass:#d2a550;--red:#e0705e;--card:#17251f;--line:#2f433b;--on-green:#e4ebe7}
+*,*:before,*:after{box-sizing:inherit}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 1.125rem/1.65 "Source Serif 4",Georgia,serif}
+h1,h2,h3{font-family:"Bricolage Grotesque","Helvetica Neue",Arial,sans-serif;line-height:1.05;margin:0}
+.wrap{max-width:62rem;margin:0 auto;padding:0 1.25rem}
+header{background:var(--green);color:var(--on-green);padding:1.2rem 0 4rem}
+nav{display:flex;justify-content:space-between;align-items:baseline;font-family:"Bricolage Grotesque",sans-serif;font-weight:500}
+nav b{font-weight:800;font-size:1.3rem;letter-spacing:-.02em}
+nav a{color:inherit;text-decoration:none;border-bottom:2px solid var(--brass)}
+nav a:focus-visible,button:focus-visible,input:focus-visible{outline:3px solid var(--brass);outline-offset:3px}
+h1{font-weight:800;font-size:clamp(2.6rem,9vw,5.6rem);letter-spacing:-.035em;margin-top:3.5rem;max-width:12ch}
+.lede{max-width:34rem;margin:1.4rem 0 2.2rem;font-size:1.25rem;opacity:.92}
+.board{background:#0b1310;color:#f0d9a0;border:3px solid var(--brass);border-radius:6px;font-family:"Bricolage Grotesque",sans-serif;font-weight:500;max-width:38rem;overflow-x:auto}
+.board div{display:grid;grid-template-columns:1fr auto;gap:1rem;padding:.7rem 1rem;border-bottom:1px solid #2b3a33;white-space:nowrap}
+.board div:last-child{border:0}
+.board .h{font-size:.85rem;color:#8da39a}
+.ok{color:#8fd19e}.no{color:#ff8f7c}.wait{color:#f0d9a0}
+section{padding:4.5rem 0}
+h2{font-weight:800;font-size:clamp(1.9rem,5vw,3rem);letter-spacing:-.025em;margin-bottom:1.6rem;max-width:18ch}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:0}
+.two>div{padding:0 2rem 0 0}
+.two>div+div{padding:0 0 0 2rem;border-left:3px solid var(--brass)}
+h3{font-size:1.6rem;margin-bottom:.6rem;color:var(--red)}
+.route{background:var(--card);border-block:1px solid var(--line)}
+ol{list-style:none;margin:0;padding:0;border-left:4px solid var(--green);margin-left:.6rem}
+ol li{position:relative;padding:0 0 2rem 2rem;max-width:40rem}
+ol li:last-child{padding-bottom:0}
+ol li:before{content:"";position:absolute;left:-.8rem;top:.45rem;width:1.1rem;height:1.1rem;border-radius:50%;background:var(--bg);border:4px solid var(--brass)}
+ol h3{color:var(--ink);font-size:1.4rem}
+ol p{margin:.2rem 0 0}
+.cta{background:var(--green);color:var(--on-green)}
+.cta h2{color:inherit}
+form{display:flex;flex-wrap:wrap;gap:.8rem;max-width:34rem;margin-top:1.4rem}
+input{flex:1 1 14rem;font:inherit;padding:.85rem 1rem;border:2px solid var(--brass);border-radius:4px;background:var(--bg);color:var(--ink)}
+button{font:800 1rem "Bricolage Grotesque",sans-serif;padding:.85rem 1.5rem;border:0;border-radius:4px;background:var(--brass);color:#14201c;cursor:pointer}
+button:hover{filter:brightness(1.1)}
+#msg{margin-top:1.2rem;min-height:1.6em;font-weight:600}
+footer{padding:2rem 0;font-size:.95rem;opacity:.75}
+@media (max-width:640px){.two{grid-template-columns:1fr}.two>div,.two>div+div{padding:0;border:0}.two>div+div{margin-top:2rem;padding-top:2rem;border-top:3px solid var(--brass)}}
+@media (prefers-reduced-motion:no-preference){.board div{animation:flip .5s both}.board div:nth-child(2){animation-delay:.15s}.board div:nth-child(3){animation-delay:.3s}.board div:nth-child(4){animation-delay:.45s}@keyframes flip{from{opacity:0;transform:translateY(-6px)}}}
+</style>
+</head>
+<body>
+<header>
+ <div class="wrap">
+  <nav><b>herrpullman</b><a href="#join">Get help</a></nav>
+  <h1>You've been herpullmanned. Let's get you moving again.</h1>
+  <p class="lede">herrpullman helps people who have been herpullmanned and laktohelensohned get back on their feet, one stop at a time.</p>
+  <div class="board" role="table" aria-label="Recovery departures">
+   <div class="h"><span>Your status</span><span>Platform</span></div>
+   <div><span>Herpullmanned</span><span class="no">Delayed</span></div>
+   <div><span>Laktohelensohned</span><span class="wait">Boarding</span></div>
+   <div><span>Back on your feet</span><span class="ok">On time</span></div>
+  </div>
+ </div>
+</header>
+
+<section>
+ <div class="wrap">
+  <h2>Two things can happen to a person. We treat both.</h2>
+  <div class="two">
+   <div>
+    <h3>Herpullmanned</h3>
+    <p>It happens fast and without warning. One moment things are fine, the next you're standing on the platform watching everything leave without you. If that sounds familiar, you are not the first, and you don't have to sort it out alone.</p>
+   </div>
+   <div>
+    <h3>Laktohelensohned</h3>
+    <p>Slower, stranger, and harder to explain at dinner. Many clients arrive laktohelensohned and assume it's just how things are now. It isn't. Our team has seen it all and has a plan.</p>
+   </div>
+  </div>
+ </div>
+</section>
+
+<section class="route">
+ <div class="wrap">
+  <h2>The route back</h2>
+  <ol>
+   <li><h3>Arrival</h3><p>We sit down with you, listen to what happened, and work out which kind of herpullmanning (or laktohelensohning, or both) we're dealing with. No judgment.</p></li>
+   <li><h3>Stabilize</h3><p>We handle the immediate mess: the practical stuff, the paperwork, the questions you've been avoiding. You get one coordinator who knows your whole story.</p></li>
+   <li><h3>Rebuild</h3><p>Together we set small, real goals for the next few weeks. Then we check in until you're steady, and a little after that, just in case.</p></li>
+   <li><h3>Back on your feet</h3><p>You walk out on your own. Some clients send us postcards. We keep them all.</p></li>
+  </ol>
+ </div>
+</section>
+
+<section class="cta" id="join">
+ <div class="wrap">
+  <h2>Ready to get started?</h2>
+  <p>Leave your name and we'll set up a first conversation. It's free and there's no obligation.</p>
+  <form id="f">
+   <input id="n" type="text" placeholder="Your name" aria-label="Your name" autocomplete="name">
+   <button type="submit">Request a first conversation</button>
+  </form>
+  <div id="msg" role="status"></div>
+ </div>
+</section>
+
+<footer><div class="wrap">herrpullman. Recovery from herpullmanning and laktohelensohning. Results vary, trains run late.</div></footer>
+
+<script>
+document.getElementById('f').addEventListener('submit',function(e){
+ e.preventDefault();
+ var n=document.getElementById('n').value.trim();
+ var m=document.getElementById('msg');
+ m.textContent=n?('Thanks, '+n+'. Your request is in and a recovery coordinator will be in touch.'):'Please enter your name so we know who to look for.';
+});
+</script>
+</body>
+</html>
